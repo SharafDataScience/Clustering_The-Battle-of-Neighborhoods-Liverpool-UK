@@ -1,69 +1,80 @@
-#  Recipe Site Traffic Prediction
 
-This project is part of a practical data science challenge to help Tasty Bytes, a recipe and meal planning platform, optimize homepage content by predicting which recipes will drive **high user traffic**. The goal is to recommend popular recipes for the homepage based on nutritional and categorical features of each recipe.
+# The Battle of Neighborhoods – Liverpool, UK
 
----
+## Project Overview
 
-##  Project Overview
+This repository presents the final capstone project for the **IBM Data Science Certification** offered on **Coursera**. The project aims to analyze neighborhoods in **Liverpool, United Kingdom**, using **Foursquare API** and **Machine Learning** to uncover business insights, especially for entrepreneurs, students, and tourists.
 
-The **business objective** is to increase user engagement and subscriptions by correctly selecting popular recipes to feature. Specifically, we aim to:
+## Author
 
-- **Predict whether a recipe will result in high traffic**
-- Achieve at least **80% accuracy** for predicting high-traffic recipes
-- Provide **actionable insights** and a **metric** the business can monitor moving forward
+**Abdullah Sharaf**  
+Date: October 25, 2020
 
 ---
 
-##  Data Description
+## Business Problem
 
-The dataset contains the following fields:
-
-| Column        | Description                                                |
-|---------------|------------------------------------------------------------|
-| `recipe`      | Unique recipe identifier                                   |
-| `calories`    | Number of calories per serving                             |
-| `carbohydrate`| Grams of carbohydrate per serving                          |
-| `sugar`       | Grams of sugar per serving                                 |
-| `protein`     | Grams of protein per serving                               |
-| `category`    | Recipe type/category (e.g. Dessert, Meat, Breakfast, etc.) |
-| `servings`    | Number of servings produced by the recipe                  |
-| `high_traffic`| Whether the recipe led to high traffic on the site ("High")|
+Liverpool, as the financial capital of the UK and a major hub for business, tourism, and education, presents vast opportunities for new ventures. This project seeks to:
+- Identify the most popular venue types across neighborhoods.
+- Cluster neighborhoods based on venue similarity.
+- Provide actionable insights for:
+  - Entrepreneurs evaluating business locations.
+  - Tourists seeking attractions and eateries.
+  - Students exploring city life and opportunities.
 
 ---
 
-##  Methodology
+## Data Collection & Preparation
 
-###  Data Cleaning & Validation
-- Checked for missing or inconsistent values
-- Converted categorical variables to appropriate formats
-- Validated data ranges for nutritional content
+Data sources and tools used:
+- **Google** and **Foursquare API** to collect venue data.
+- **Python libraries**: 
+  - `pandas`, `BeautifulSoup` for data wrangling.
+  - `geopy` to obtain geographic coordinates.
+  - **Foursquare API** to retrieve JSON data on venues within 1000m radius of neighborhoods.
 
-### Exploratory Data Analysis (EDA)
-- Visualized distribution of traffic vs recipe features
-- Analyzed feature relationships using boxplots, histograms, and bar charts
-
-###  Modeling
-- **Baseline model**: Logistic Regression
-- **Comparison model**: Random Forest Classifier
-- Used stratified train-test splits and cross-validation
-- Evaluated with Accuracy, Precision, Recall, and F1-Score
-
-###  Business Metric
-- Defined a success metric to monitor prediction accuracy
-- Calculated estimated current accuracy on historical data
+Processed Data Includes:
+- Neighborhood names
+- Latitude and longitude
+- Top venue categories in each neighborhood
 
 ---
 
-##  Key Findings
+## Methodology
 
-- Certain recipe categories (e.g. Desserts, One Dish Meals) are more likely to trigger high traffic
-- Nutritional features like sugar and protein content show patterns linked to popularity
-- The Random Forest model outperformed the baseline, with accuracy close to the 80% target
+1. **Data Wrangling**: Extraction and cleaning using pandas and BeautifulSoup.
+2. **Exploratory Data Analysis**: 
+   - Identified top 5 venues per neighborhood.
+   - Most common venue types include **Pub**, **Café**, **Bar**, **Hotel**, and **Coffee Shop**.
+3. **Data Normalization**: One-hot encoding used to prepare data for clustering.
 
 ---
 
+## Machine Learning – Clustering
 
+- **Algorithm Used**: KMeans Clustering (Unsupervised ML)
+- **Objective**: Segment Liverpool neighborhoods into clusters based on venue categories.
+- **Number of Clusters**: 5
+- **Visualization**: Clusters plotted using `Folium` on an interactive map.
 
+### Cluster Highlights:
+- **Cluster 1**: Supermarkets, restaurants, pharmacies, and grocery stores.
+- **Cluster 2**: Pubs, cafes, coffee shops – ideal for leisure and social venues.
+- **Cluster 3**: Unique venues like watch shops.
 
+---
 
+## Results & Insights
+
+- The project provides a comprehensive overview of neighborhood characteristics.
+- Entrepreneurs can use this as a guide to identify high-potential business zones.
+- Tourists and students can benefit from the localized venue data for better city exploration.
+
+---
+
+## Conclusion
+
+This analysis highlights Liverpool’s dynamic neighborhood ecosystem, with data-driven insights into where to open businesses or explore urban life. There's significant scope for extending this analysis with additional data layers like demographic info, foot traffic, and commercial real estate trends.
+
+---
 
