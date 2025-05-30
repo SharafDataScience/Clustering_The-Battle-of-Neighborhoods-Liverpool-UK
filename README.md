@@ -80,20 +80,20 @@ This analysis highlights Liverpool’s dynamic neighborhood ecosystem, with data
 
 ## Data Sources Used
 1. Neighborhood Names
-Source: Google Search Results
+  Source: Google Search Results
 
-URL Queried:
-https://www.google.com/search?q=liverpool+neighborhoods
+  URL Queried:
+  https://www.google.com/search?q=liverpool+neighborhoods
 
-### Method Used:
+  ### Method Used:
 
-- Web scraping using requests and BeautifulSoup.
+  - Web scraping using requests and BeautifulSoup.
 
 2. Neighborhood Coordinates (Latitude & Longitude)
-Source: OpenStreetMap Nominatim API
+  Source: OpenStreetMap Nominatim API
 
-Library Used: geopy.geocoders.Nominatim
+  Library Used: geopy.geocoders.Nominatim
 
-### Method Used:
+  ### Method Used:
 
-For each neighborhood name, geocode it using Nominatim to get latitude and longitude.
+  -  For each neighborhood name, geocode it using Nominatim to get latitude and longitude.
