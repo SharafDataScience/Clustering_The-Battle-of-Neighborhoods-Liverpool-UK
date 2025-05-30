@@ -89,3 +89,11 @@ https://www.google.com/search?q=liverpool+neighborhoods
 
 - Web scraping using requests and BeautifulSoup.
 
+2. Neighborhood Coordinates (Latitude & Longitude)
+Source: OpenStreetMap Nominatim API
+
+Library Used: geopy.geocoders.Nominatim
+
+### Method Used:
+
+For each neighborhood name, geocode it using Nominatim to get latitude and longitude.
