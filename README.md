@@ -78,3 +78,14 @@ This analysis highlights Liverpool’s dynamic neighborhood ecosystem, with data
 
 ---
 
+## Data Sources Used
+1. Neighborhood Names
+Source: Google Search Results
+
+URL Queried:
+https://www.google.com/search?q=liverpool+neighborhoods
+
+### Method Used:
+
+- Web scraping using requests and BeautifulSoup.
+
