@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This repository presents the final capstone project for the **IBM Data Science Certification** offered on **Coursera**. The project aims to analyze neighborhoods in **Liverpool, United Kingdom**, using **Foursquare API** and **Machine Learning** to uncover business insights, especially for entrepreneurs, students, and tourists.
+This repository presents the final capstone project for the **IBM Data Science Certification** offered on **Coursera**. The project aims to analyze neighborhoods in **Liverpool, United Kingdom**, using **Foursquare API** and **Machine Learning** to uncover business insights, especially for students, and tourists.
 
 ## Author
 
