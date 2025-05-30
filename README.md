@@ -97,3 +97,15 @@ This analysis highlights Liverpool’s dynamic neighborhood ecosystem, with data
   ### Method Used:
 
   -  For each neighborhood name, geocode it using Nominatim to get latitude and longitude.
+3. Venue Data
+  Source: Foursquare Places API
+
+  API Endpoint:
+  https://api.foursquare.com/v2/venues/explore
+
+  Client Credentials Used:
+
+  CLIENT_ID = 'QEB14EKSXTPMRE32ROLUDFW4TBGMS53BIPRMI1L4MX1CY3S4'
+
+  CLIENT_SECRET = 'HYV4RFEOYQ5LHQIGNJNEFKMDSRPEIZZAPWEWIP2UKUQDQMRW'
+
